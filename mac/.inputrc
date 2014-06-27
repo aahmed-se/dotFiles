@@ -1,0 +1,23 @@
+set completion-ignore-case On
+TAB:menu-complete
+# this makes the "delete" key work rather than 
+# just entering a ~
+
+# these allow you to use ctrl+left/right arrow keys
+# to jump the cursor over words
+"\e[5C": forward-word
+"\e[5D": backward-word
+
+
+# these allow you to start typing a command and 
+# use the up/down arrow to auto complete from 
+# commands in your history
+"\e[B": history-search-forward
+"\e[A": history-search-backward
+
+"\e\e[C": end-of-line
+"\e\e[D": beginning-of-line
+
+# this lets you hit tab to auto-complete a file or 
+# directory name ignoring case
+set completion-ignore-case On

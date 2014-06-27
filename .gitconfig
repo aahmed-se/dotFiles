@@ -1,0 +1,32 @@
+[user]
+	name = Ali Ahmed
+	email = aahmed.se@gmail.com
+[core]
+	filemode = false
+	editor = vim
+	autocrlf = input
+	safecrlf = false
+[ui]
+	color = true
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+	ui = auto
+[alias]
+	rebase = rebase --ignore-date
+	co = checkout
+	br = branch
+	bra = branch -v
+	st = status --ignore-submodules=dirty
+	unstage = reset HEAD --
+	lm = log master..
+	mt = mergetool
+	la = log --graph --oneline --all --pretty=format:'%Cred%h%Creset -%C(magenta)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(magenta)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	lgm = log master.. --graph --pretty=format:'%Cred%h%Creset - %s' --abbrev-commit
+	pom = push origin master
+	remas = rebase master
+	fixup = commit --amend --reuse-message HEAD
+	wip = commit -a -m "WIP"
+	go = reset HEAD^
